@@ -7,7 +7,7 @@ int main(void){
 	scanf("%d%d",&m,&n);
 	if(m>n || m<=0){
 		printf("Invalid data"); 
-		return;
+		return 0;
 	}
 	for(i=m;i<=n;i++){
 		sum += i*i + 1.0/i;
