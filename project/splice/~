@@ -1,0 +1,3 @@
+int show(){
+	printf("Œ“ «view"); 
+}

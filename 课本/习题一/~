@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+int pb17(double num);
+int main(void){
+	//pb17(1.0);
+	
+}
+
+int pb17(double num){
+	 double sum =0;
+	if(num < 0){
+		sum = pow(num+1,2)+ 2 * num + 1/num;
+	}else{
+		sum = sqrt(num);
+	}
+	printf("sum=%f",sum);
+}
+int pb28(int n){
+	double i,sum=0,base=1,flag = 1;
+	for(i=1;i<=n;i++){
+		sum + = 1/(base*flag);
+		base = _base + 2;
+		flag = -flag;
+	}
+	printf("%f",sum);
+}
