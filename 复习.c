@@ -8,6 +8,10 @@ void erwei();
 void getString();
 void pdtower();
 void zzxcf();
+void twoPoint();
+int zzxcfdg(int a,int b);
+int digui(int num);
+int revere(int a,int num );
 //指针间的交换  形参的值的交换并不会影响外部的值
 //只有去修改指针指向的内容的时候才是会改变外部的值
 //前面数组也是同理  你用方法去改变数组的值 并不是去改变
@@ -20,6 +24,7 @@ void pointChange(int *a,int *b){
 	b = pt;
 	printf("%d %d\n",a,b);
 } 
+
 int main(){
 	//bubbleSort();
 	//selectSort();
@@ -35,7 +40,14 @@ int main(){
 	//erwei();
 	//getString();
 	//pdtower();
-	zzxcf();
+	//zzxcf();
+	//twoPoint();
+	
+	//printf("%d",digui(3));
+	
+	//printf("%d",zzxcfdg(99,99));	
+	printf("%d",revere(12345,4));	
+	
 } 
 
 void bubbleSort(){
@@ -210,7 +222,7 @@ void zzxcf(){
 	int a,b,c;
 	scanf("%d %d",&a,&b);
 	while(a%b!=0){
-		c = a%b; g
+		c = a%b; 
 		a = b;
 		b = c;
 	} 
@@ -223,6 +235,38 @@ void twoPoint(){
 		"king",
 		"whoe"
 	};
+	printf("%s\n",*str);//str[0][0]
+	printf("%s\n",*str+1);//str[0][1]
+	printf("%s\n",*(str+1));//str[0][1]
+	printf("%s\n",*(str+1)+1);
+	//在没有括号的情况下是先做*取内容然后再做+1  
+	//如果要是取单个字符那么就是需要去再取出一个*号
+	//二维数组 一个*就是取出整个字符串 
+	//**就是取出一个字符 
 } 
 
+//递归题目
+//阶乘递归
+int digui(int num) {
+	if(num==1){
+		return 1;
+	}
+	return num * digui(num - 1);
+}
+//辗转相除法的递归
+int zzxcfdg(int a,int b){
+	if(a%b==0){
+		return b;
+	}
+	return zzxcfdg(b,a%b);
+} 
+//递归数字反转
+int revere(int a,int num){
+	
+	if(a/10==0){
+		return a;
+	}
+	
+	return  a%10*pow(10,num)+revere(a/10,num-1);  
+} 
 

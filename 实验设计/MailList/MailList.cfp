@@ -17,14 +17,12 @@
 	<File>Model.c</File>
 	<File>Controller.c</File>
 </Folder>
-<Attribute topline="4" x="7" y="9">main.c</Attribute>
-<Attribute topline="1" x="14" y="7">view.h</Attribute>
-<Attribute topline="1" x="18" y="2">Model.h</Attribute>
-<Attribute topline="1" x="17" y="10">Controller.h</Attribute>
+<Attribute topline="1" x="1" y="2">main.c</Attribute>
+<Attribute topline="7" x="1" y="1">view.h</Attribute>
 <Attribute topline="1" x="2" y="9">pojo.h</Attribute>
-<Attribute topline="50" x="28" y="57">view.c</Attribute>
-<Attribute topline="32" x="13" y="28">Model.c</Attribute>
-<Attribute topline="137" x="13" y="95">Controller.c</Attribute>
+<Attribute topline="101" x="1" y="107">view.c</Attribute>
+<Attribute topline="45" x="1" y="60">Model.c</Attribute>
+<Attribute topline="199" x="1" y="210">Controller.c</Attribute>
 <FolderState>111</FolderState>
 <DefConfig>mingw5</DefConfig>
 <Builder name="mingw5" type="MinGW" version="1.0">

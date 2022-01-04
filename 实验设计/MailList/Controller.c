@@ -204,7 +204,6 @@ int choiceOp(int option){
 		default:
 			break;
 			
-			
 		
 	}
 }
